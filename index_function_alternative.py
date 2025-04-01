@@ -7,5 +7,12 @@ user_input = input("Input any string: ")
 index = input("What letter to find? : ")
 
 # 3. Count the characters before the indexed character.
+position = 0
+for char in user_input:
+    if char != index:
+        position += 1
+    elif char == index:
+        break
 
 # 4. Print the length of characters before the indexed character.
+print(position)
