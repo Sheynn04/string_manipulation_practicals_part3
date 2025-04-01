@@ -3,10 +3,18 @@
 # 1. Ask for user input.
 string_input = input("Input any string: ")
 
-# 2. Create a loop to access each character of the input.
+# 2. Assign a final string variable. 
+final_string = ""
+
+# 3. Create a loop to access each character of the input.
 for char in string_input:
 
-# 3. Transform all lowercase characters into uppercase.
+# 4. Transform all lowercase characters into uppercase.
+    if "a" <= char <= "z":
+        final_string += chr(ord(char) - 32)
+    else:
+        final_string += char
 
 
-# 4. Print the final output. 
+# 5. Print the final output. 
+print(final_string)
