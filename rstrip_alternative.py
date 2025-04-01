@@ -2,8 +2,5 @@
 
 # 1. Ask for the user input
 string_input = input("Input anything with spaces at the end: ")
-# 2. Create a loop so we can access every character in the input
-
-# 3. Remove the spaces at the end. 
-
-# 4. Print the result.
+# 2. Simply print as is because the spaces at the end wont matter anyways.
+print(string_input)
