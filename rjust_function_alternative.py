@@ -2,8 +2,13 @@
 
 # 1. Ask for user input. 
 string_input = input("Enter any string: ")
+
 # 2. Assign a width for the statement.
+width = 100
 
 # 3. Add spaces to the user input if it's under the width
+if len(string_input) < width:
+    string_input = " " * (width - len(string_input)) + string_input
 
 # 4. Print the final output.
+print(string_input)
